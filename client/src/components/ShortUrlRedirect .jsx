@@ -15,10 +15,10 @@ export default function ShortUrlRedirect() {
     if (urlCode) {
       redirect();
     }
-  }, [ urlCode ]);
+  }, [urlCode]);
   return (
     <div>
-      <Heading as="h3" size="xl" m={ '3% 0% 2% 0%' }>
+      <Heading as="h3" size="xl" m={'3% 0% 2% 0%'}>
         Redirecting...
       </Heading>
     </div>

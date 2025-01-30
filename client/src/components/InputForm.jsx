@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from 'axios';
+import  axios  from "../utils/axios";
 import {
     Box,
     FormControl,
@@ -27,7 +27,6 @@ export const InputForm = () => {
     const [ isError, setIsError ] = useState(false);
     const { hasCopied, onCopy } = useClipboard(url);
     const clientBaseUrl = window.location.href;
-    console.log(clientBaseUrl)
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
